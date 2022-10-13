@@ -1,13 +1,25 @@
-import TaskList from './components/TaskList'
-import Tasksform from './components/Tasksform'
+import React from 'react';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Header from './components/header/Header';
+import Porfolio from './components/portfolio/Portfolio';
+import Resume from './components/resume/Resume';
+import Sidebar from './components/sidebar/SideBar';
+
+import './App.css';
+
 function App() {
   return (
-    <main className="bg-zinc-900 h-screen p-5">
-      <div className="container mx-auto">
-        <Tasksform/>
-        <TaskList/>
-      </div>
-    </main>
+    <>
+      <Sidebar />
+        <main className='main'>
+          <Header />
+          <About />
+          <Resume />
+          <Porfolio />
+          <Contact />
+        </main>
+    </>
   )
 }
 

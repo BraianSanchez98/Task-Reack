@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600&display=swap');
+
+#root {
+    --header-height: 3em;
+    /* Colors */
+    --hue: 1;
+    --sat: 10&;
+    --title-color:hsla(var(var(--hue), var(var(--sat)), 0%));
+    --title-color-dark:hsla(var(var(--hue), var(var(--sat)), 0%));
+    --text-color:hsla(var(var(--hue), var(var(--sat)), 10%));
+    --body-color:hsla(var(var(--hue), var(var(--sat)), 98%));
+    --container-color: rgb(255, 255, 255);
+
+    --body-font:font-family: 'Poppins', sans-serif;
+
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .8rem;
+    --smaller-font-size: .9rem;
+    --tiny-font-size: .6rem;
+
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .9rem;
+    --small-font-size: .8rem;
+    --smaller-font-size: .75rem;
+  }
+}
+
+/* BASE */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+
+body, button, input, textarea 
+{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body
+{
+  background-image: radial-gradient(circle farthest-side, #f5fcbb, #f8b60067);
+  
+  color: var(--text-color);
+}
+
+h1, h2, h3
+{
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul
+{
+  list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+button
+{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img
+{
+  max-width: 100%;
+  height: auto;
+}
+
+/* REUSABLE CSS CLLASS*/
+
+.section
+{
+  padding: 3rem 0 2rem;
+  min-height: 100vh;
+}
+
+.section__title
+{
+  font-size: var(--h1-font-size);
+  color: var(--text-color);
+  font-weight_:var(--font-semi-bold);
+  margin-left: .7rem;
+  position: relative;
+  margin-bottom: .7rem;
+  text-align:center;
+}
+
+.section--subtitle
+{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section--subtitle, .section--title
+{
+  text-align: center;
+}
+
+/* LAYOUT */
+
+.container
+{
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin:0 auto;
+}
+
+.grid
+{
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* buttons */
+
+.button
+{
+  display: inline-block;
+  background-color: rgb(0, 0, 255);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px black;
+  transition: .5s;
+  margin-top: 1rem;
+}
+.button:hover
+{
+  background-color: rgb(29, 104, 202);
+  color: #000;
+}
+.button__icon
+{
+  margin-left: var(--mb-0-5);
+}
+.button--flex
+{
+  display: inline-flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 992px) {
+ .container
+  {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+ }
+
+ @media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
